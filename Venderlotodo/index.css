@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing:0;
+}
+/* SECCION ID HERO */
+#hero{
+height: 100%;
+width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* DAR FORMATO DE FUENTE */
+body{
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+}
+/* DAR TAMAÑO A LAS LETRAS */
+h1{ font-size: 2em;}
+h2{ font-size: 2.4em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+/* DAR FORMATO A LOS BOTONES */
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+/* DAR COLOR A LOS BOTON CUANDO ESTA SOBRE EL BOTON, 
+ENVOLVER EN UN FORM PARA QUE VAYA AL LINK QUE LE HAYAN DADO */
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+/* DEFINE ANCHO MAXIMO AL CONTAINER */
+.texto-justificado{
+text-align: justify;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+/* DEFINE COLOR A LA CLASE COLOR-ACENTO */
+.color-acento{ color:blueviolet; }
+
+/* DEFINE COLOR AL HEADER */
+header{
+    background-color: rgb(0,0,0);
+}
+/* DEFINE PROPIEDADES AL LOGO */
+header .icon-basket{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.7em;
+}
+/* DEFINE PROPIEDADES AL CONTAINER DEL HEADER */
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* DEFINE PROPIEDADES AL MENU */
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+/* DEFINE PROPIEDADES AL TEXTO DE LA CABECERA HEADER */
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+/* DEFINE COLOR AL SELECCIONAR TEXTO DE LA CABECERA */
+header a:hover{
+    color: white;
+}
+/* DEFINE PROPIEDADES AL HERO */
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/Home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* DEFINE COLOR DE TEXTO AL HERO */
+#hero h2{
+    color: white;
+}
+/* DEFINE PROPIEDADES AL BOTOTN DEL HERO */
+#hero button{
+    font-size: 1.75em;
+}
+/* DEFINE PROPIEDADES AL CONTAINER DE LA SECCION SOMOS-PROYA */
+#quienes-somos .container{
+    text-align: center;
+    background-size: cover;
+    padding: 100px 12px;
+    background-color: rgb(248, 246, 246);
+}
+/* DEFINE PROPIEDADES A LA SECCION NUESTROS PROGRAMAS */
+#nuestros-servicios{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+/* DEFINE PROPIEDADES AL CONTAINER DE LA SECCION NUESTROS PROGRAMAS */
+#nuestros-servicios .container{
+    padding: 100px 5px;
+}
+/* DEFINE PROPIEDADES AL H2 DE LA SECCION NUESTROS PROGRAMAS */
+#nuestros-servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+/* DEFINE PROPIEDADES AL PARRAFO DE LA SECCION NUESTROS PROGRAMAS */
+#nuestros-servicios p{
+    display: none;
+}
+/* DEFINE PROPIEDADES A LA CLASE CARTA DE LA SECCION NUESTROS PROGRAMAS */
+#nuestros-servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+/* DEFINE PROPIEDADES A LOS HERMANOS DE LA CLASE CARTA */
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/Hosting.jpg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/Responsive.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.30)
+    )
+    ,url("media/Marketing.jpg");
+}
+/* DEFINE PROPIEDADES AL CONTAINER DE LA SECCION CARACTERISTICAS */
+#caracteristicas .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255,255,255);
+    color: black;
+    height: 80vh;
+    }
+/* DEFINE PROPIEDADES A LI DE LA SECCION CARACTERISTICAS*/
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+/* DEFINE PROPIEDADES A LA SECCION FINAL*/
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+/* DEFINE PROPIEDADES AL H2 DE LA SECCION FINAL */
+#final h2{
+    font-size: 9vw;
+}
+/* DEFINE PROPIEDADES AL BOTON DE LA SECCION FINAL */
+#final button{
+    font-size: 5vw;
+}
+/*DEFINE PROPIEDADES AL FORMULARIO*/
+#contactenos{
+    top: 0;
+    background-image: url(media/formulario.jpg);
+    background-size: 100vw 100vh;
+    background-attachment:display flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    font-family: monospace;
+}
+#contactenos form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+#contactenos h2 {
+    color:#fff;
+    text-align: center;
+    margin:0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#contactenos input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border:none;
+}
+#contactenos textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    }
+#boton{
+    background: orangered;
+    color: #fff;
+    padding: 20px;
+}
+#boton:hover{
+    cursor: pointer;
+}    
+
+/* DEFINE PROPIEDADES AL FOOTER */
+footer{
+    background-color: rgb(230,230,230);
+}
+/* DEFINE PROPIEDADES AL PARRAFO DEL FOOTER */
+footer p{
+    text-align: center;
+    margin: 0;
+    padding: 12px;
+    color: rgb(40,40,40);
+}
+/* DEFINE PROPIEDADES A LA CLASE CONTAINER DEL FOOTER */
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+}
+#gracias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 140vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/programmer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+@media (min-width: 850px){
+    header{
+    /* DEFINE PROPIEDADES DE POSICION FIJA A LA CABECERA*/
+        Position: fixed;
+        width: 100%;
+    }
+/* DEFINE PROPIEDADES AL CONTAINER DEL HEADER */
+    header .container{
+     /* DEFINE PROPIEDADES DE ESTAR EN LINEA LOS ELEMENTOS DEL CONTAINER DEL HEADER*/
+        flex-direction: row;
+      /* DEFINE LOS ELEMNTOS SE CENTREN */
+        justify-content: space-between;
+    }
+
+    header nav{
+    /* DEFINE PROPIEDADES DE ESTAR EN LINEA LOS ELEMENTOS DEL CONTAINER DEL HEADER*/
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+     /* DEFINE PROPIEDADES DEL H1 DEL HERO*/
+    #hero h1{
+        font-size: 5em;
+    }
+     /* DEFINE PROPIEDADES DEL CONTAINER DE LA SECCION SOMOS-PROYA*/
+    #quienes-somos .container{
+        display: flex;
+        background: cover;
+        justify-content: space-evenly;
+       }
+     /* DEFINE PROPIEDADES A LA CLASE TEXTO DE LA SECCION SOMOS-PROYA*/
+    #quienes-somos .texto{
+        width: 50%;
+        max-width: 500px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienes-somos h2{
+        margin-top: 0px;
+    }
+
+    #quienes-somos .img-container{
+        background-image: url("media/carrito.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+    }
+
+    #nuestros-servicios .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servicios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-servicios h2{
+        font-size: 4em;
+    }
+
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
+
+    #nuestros-servicios .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        )
+        ,url("media/Hosting.jpg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        )
+        ,url("media/Responsive.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        )
+        ,url("media/Marketing.jpg");
+
+    }
+    #Contactenos{
+        top: 0;
+        background-image: url(media/formulario.jpg);
+        background-attachment: display flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        font-family: monospace;
+        }
+    #caracteristicas{
+        background-image: url("media/developer.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+    #contactenos form {
+        height: 450px;
+        width: 450px;
+        margin: auto;
+        background: rgba(0,0,0,0.4);
+        padding: 0px 20px;
+        box-sizing: border-box;
+        margin-top: 0px;
+        border-radius: 7px;
+    }
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+    footer .container{
+        height: 100px;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 12px;
+        color: rgb(40,40,40);
+        text-decoration: none;
+        text-size-adjust: 5px
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
